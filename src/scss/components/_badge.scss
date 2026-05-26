@@ -1,20 +1,21 @@
-@use "../utils/mixin";
-@use "../utils/variables" as v;
+// @use "../utils/mixin";
+// @use "../utils/variables" as v;
+@use "../utils/styles-forwarded" as forw;
 
 .badge {
-  @include mixin.badge-base();
+  @include forw.badge-base();
 
-  color: v.$badge-c1;
+  color: forw.$badge-c1;
 }
 
 .badge-completed {
-  background-color: v.$completed;
+  background-color: forw.$completed;
 }
 
 .badge-ended {
-  background-color: v.$ended;
+  background-color: forw.$ended;
 }
 
 .badge-active {
-  background-color: v.$active;
+  background-color: forw.$active;
 }
