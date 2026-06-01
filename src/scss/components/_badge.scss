@@ -1,6 +1,4 @@
-// @use "../utils/mixin";
-// @use "../utils/variables" as v;
-@use "../utils/styles-forwarded" as forw;
+@use "../utilities/styles-forwarded" as forw;
 
 .badge {
   @include forw.badge-base();
