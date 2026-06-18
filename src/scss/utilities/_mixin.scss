@@ -1,13 +1,13 @@
-@mixin badge-base() {
-  display: inline-block;
-  min-width: 96px;
-  padding: 4px 8px;
+@use "sass:map";
 
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 20;
-  letter-spacing: 0.07px;
-  text-align: center;
+@mixin viewport-md {
+  @media (min-width: 767px) {
+    @content;
+  }
+}
 
-  border-radius: 20px;
+@mixin text-gradient {
+  background: var(--hero-name-background);
+  background-clip: text;
+  color: transparent;
 }
